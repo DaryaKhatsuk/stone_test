@@ -27,7 +27,7 @@ async def send_data_to_telegram_bot(product_info):
              f"Текст отзыва: {product_info['review_text']}\n" \
              f"Рейтинг товара: {product_info['product_rating']}."
 
-    await bot.send_message(chat_id='1069539543', text=result, parse_mode=ParseMode.MARKDOWN)
+    await bot.send_message(chat_id='YOUR_CHAT_ID', text=result, parse_mode=ParseMode.MARKDOWN)
 
 
 @dp.message(Command('start'))
